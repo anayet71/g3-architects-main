@@ -1,74 +1,262 @@
-*{
-     font-family: 'Work Sans'; 
+* {
+     font-family: 'Work Sans';
      margin: 0;
-    
 }
+
 /*-------------
   Header Start
- -------------*/   
+ -------------*/
 
-.container{
-     background-color: rgba(253, 143, 17, 0.1); 
-     width: 100%;
-     margin: 0 auto;    
+.container {
+     background-color: rgba(253, 143, 17, 0.1);
+     text-align: center;
 }
-.header{
+
+
+.header {
      margin: 0 auto;
      display: flex;
      align-items: center;
      width: 1440px;
      justify-content: space-between;
-    
+     padding-top: 50px;
+     padding-bottom: 102px;
 }
-.header-name{
+
+.header-name {
      font-weight: 700;
      font-size: 45px;
 }
 
-nav ul li{
+nav ul li {
      list-style-type: none;
      display: inline-block;
      margin-left: 70px;
 }
-nav ul li a{
+
+nav ul li a {
      text-decoration: none;
+     font-size: 18px;
+     color: #424242;
 }
-.header-title{
-     text-align: center;
+.header-title {
+     text-align: center;    
 }
 .header-title h1{
+     margin-bottom: 20px;
+}
+.header-title h1 {
      font-size: 64px;
      font-weight: 700;
 }
-.header-description{
+
+.header-description {
      color: #727272;
+     font-size: 16px;
+     margin-bottom: 40px;
 }
-.primary-btn{
+
+.primary-btn {
      background-color: #FF900E;
      font-size: 20px;
      font-weight: 600;
      color: white;
-     padding: 20px 25px 20px 25px ;
+     padding: 20px 25px 20px 25px;
      border-radius: 8px;
      border-style: none;
 }
-.banner img{
-      height: 700px;
-      text-align: center;
-      margin: 50px 240px 30px 240px;
+
+.banner img {
+     padding-top: 20px;
+     margin-bottom: 45px;
+     
 }
+
 /*-------------
   Section Start
- -------------*/ 
- main{
+ -------------*/
+main {
      width: 1450px;
      margin: 0 auto;
- }
-section{
-     display: flex;
-     margin-top: ;
 }
-.sum-pic{
+
+section {
+     display: flex;
+     margin-top: 100px;
+     gap: 50px;
+     align-items: center;
+     margin-bottom: 130px;
+}
+
+.sum-pic {
      display: grid;
      grid-template-columns: repeat(2, 1fr);
+}
+
+.pic-title {
+     margin-bottom: 25px;
+     font-size: 45px;
+}
+
+.opacity {
+     color: #727272;
+}
+
+.bold {
+     font-weight: 900px;
+}
+
+.color {
+     color: #FF900E;
+}
+
+.pic-description {
+     color: #727272;
+     margin-bottom: 32px;
+}
+
+/*-------------------
+   Article Start
+------------------ */
+.middle-main{
+     width: 1600px;
+     margin: 0 auto;
+}
+article {
+     display: flex;
+     gap:120px ;
+}
+
+.experience-title {
+     font-size: 45px;
+     font-weight: 700;
+     border-left: solid 5px #FF900E;
+     padding-left: 15px;
+     margin-bottom: 24px;
+}
+.experience-title-description {
+     color: #727272;
+     padding-bottom: 30px;
+     font-size: 16px;
+}
+.sub-experience-container {
+     margin-bottom: 130px;
+}
+
+.sub-experience {
+     margin-bottom: 25px;
+     box-shadow: 1px -1px 20px 0px #e9e5e5;
+     padding: 25px;
+}
+.sub-experience-title{
+     margin-top: 10px;
+}
+.sub-experience-discription{
+     color: #727272;
+     margin-top: 10px;
+}
+.experience-pic{
+     position: relative;
+}
+.experience-btn{
+     background-color: #FF900E;
+     width: 342px;
+     height: 200px;
+     border-radius: 10px;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     transform: translate(-22%, -67%);
+
+
+}
+.ten{
+     font-size:65px ;
+     font-weight: 700;
+     
+}
+.ten-ex{
+
+}
+/* ---------------
+  Facts Start
+  ---------------*/
+.facts .experience-title {
+     border: none;
+     padding-left: 0px;
+
+}
+
+.facts-description {
+     color: #727272;
+     margin-bottom: 100px;
+}
+
+/* -------------
+  Career Start
+  ------------- */
+.career {
+     display: flex;
+     gap: 120px;
+
+}
+
+.award-surface {
+     border: 2px solid #FF900E;
+     text-align: center;
+     border-radius: 8px;
+     width: 240px;
+     height: 240px;
+
+}
+
+.award {
+     text-align: center;
+     margin: 45px;
+}
+
+.point {
+     font-size: 45px;
+     font-weight: 600;
+     color: #424242;
+}
+
+.award-name {
+     font-size: 20px;
+}
+
+.sponsor {
+     margin-top: 180px;
+     margin-bottom: 50px;
+}
+
+.sponsor-title {
+     text-align: center;
+     font-size: 45px;
+     font-weight: 700;
+     margin-bottom: 25px;
+}
+.sponsor-description {
+     text-align: center;
+     color: #727272;
+}
+.sponsor-tag{
+     display: flex;
+     gap: 155px ;
+     margin-bottom: 130px;   
+}
+.sponsor-tag-icon{
+     filter: grayscale(100%);
+}
+
+footer{
+     width: 1500px;
+     height: 60px;
+     background-color: #FFF4E7;
+     color: #424242;
+     text-align: center;
+    padding-top: 40px;
 }
