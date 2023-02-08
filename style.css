@@ -12,7 +12,6 @@
      text-align: center;
 }
 
-
 .header {
      margin: 0 auto;
      display: flex;
@@ -39,15 +38,15 @@ nav ul li a {
      font-size: 18px;
      color: #424242;
 }
+
 .header-title {
-     text-align: center;    
+     text-align: center;
 }
-.header-title h1{
-     margin-bottom: 20px;
-}
+
 .header-title h1 {
      font-size: 64px;
      font-weight: 700;
+     margin-bottom: 20px;
 }
 
 .header-description {
@@ -69,18 +68,42 @@ nav ul li a {
 .banner img {
      padding-top: 20px;
      margin-bottom: 45px;
-     
 }
+
+/*-------------------
+   Header responsive
+--------------------*/
+@media screen and (max-width:576px) {
+
+     .header {
+          flex-direction: column;
+          width: 100%;
+     }
+
+     nav ul li {
+          margin-left: 0px;
+          display: block;
+     }
+
+     .banner img {
+          width: 100%;
+     }
+
+     .header-title h1 {
+          font-size: 45px;
+     }
+
+
+}
+
 
 /*-------------
   Section Start
  -------------*/
-main {
-     width: 1450px;
-     margin: 0 auto;
-}
 
 section {
+     width: 1450px;
+     margin: 0 auto;
      display: flex;
      margin-top: 100px;
      gap: 50px;
@@ -91,6 +114,7 @@ section {
 .sum-pic {
      display: grid;
      grid-template-columns: repeat(2, 1fr);
+     gap: 10px;
 }
 
 .pic-title {
@@ -115,16 +139,34 @@ section {
      margin-bottom: 32px;
 }
 
+/* ---------------------
+   Section responsive
+  -------------------- */
+@media screen and (max-width:576px) {
+     section {
+          width: 575px;
+          flex-direction: column-reverse;
+          align-items: start;
+     }
+
+     .sum-pic {
+          grid-template-columns: repeat(1, 1fr);
+     }
+
+}
+
 /*-------------------
    Article Start
 ------------------ */
-.middle-main{
+
+.middle-main {
      width: 1600px;
      margin: 0 auto;
 }
+
 article {
      display: flex;
-     gap:120px ;
+     gap: 120px;
 }
 
 .experience-title {
@@ -134,11 +176,13 @@ article {
      padding-left: 15px;
      margin-bottom: 24px;
 }
+
 .experience-title-description {
      color: #727272;
      padding-bottom: 30px;
      font-size: 16px;
 }
+
 .sub-experience-container {
      margin-bottom: 130px;
 }
@@ -148,17 +192,16 @@ article {
      box-shadow: 1px -1px 20px 0px #e9e5e5;
      padding: 25px;
 }
-.sub-experience-title{
+
+.sub-experience-title {
      margin-top: 10px;
 }
-.sub-experience-discription{
+
+.sub-experience-description {
      color: #727272;
      margin-top: 10px;
 }
-.experience-pic{
-     position: relative;
-}
-.experience-btn{
+.experience-btn {
      background-color: #FF900E;
      width: 342px;
      height: 200px;
@@ -170,31 +213,67 @@ article {
      align-items: center;
      position: absolute;
      transform: translate(-22%, -67%);
-
-
 }
-.ten{
-     font-size:65px ;
+.ten {
+     font-size: 65px;
      font-weight: 700;
-     
 }
-.ten-ex{
 
+/* --------------------
+   Article responsive
+  ---------------- */
+
+@media screen and (max-width:576px) {
+     article {
+          width: 575px;
+          display: block;
+
+     }
+     .experience-btn {
+          background-color: #FF900E;
+          width: 100px;
+          height: 50px;
+          border-radius: 10px;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transform: translate(0, 0);   
+          display: block; 
+          position: sticky;      
+     }
+     .ten{
+          font-size: 16px;
+     }
+     .ten-ex{
+          font-size: 16px;
+     }
 }
 /* ---------------
   Facts Start
   ---------------*/
+
 .facts .experience-title {
      border: none;
      padding-left: 0px;
 
 }
-
 .facts-description {
      color: #727272;
      margin-bottom: 100px;
 }
-
+/*------------------
+Facts responsive
+ ------------------- */
+ @media screen and (max-width:576px){
+ .facts .experience-title{
+     font-size: 40px;
+ }
+ .facts-description{
+     font-size: 16px;
+ }
+ }
 /* -------------
   Career Start
   ------------- */
@@ -203,14 +282,12 @@ article {
      gap: 120px;
 
 }
-
 .award-surface {
      border: 2px solid #FF900E;
      text-align: center;
      border-radius: 8px;
      width: 240px;
      height: 240px;
-
 }
 
 .award {
@@ -227,36 +304,84 @@ article {
 .award-name {
      font-size: 20px;
 }
+/*---------------------
+ Career responsive
+--------------------- */
+@media screen and (max-width:576px){
+     .career{
+          display: block;
+     }
+     .award-surface{
+          margin-bottom: 10px;
+     }
+}
+
+/* Hoover Design */
+.award-surface:hover {
+     background-color: #FF900E;
+     transition: all .5s ease;
+     border-radius: 20px;
+}
+
+/* Our sponsor Design */
 
 .sponsor {
      margin-top: 180px;
      margin-bottom: 50px;
+     text-align: center;
 }
 
-.sponsor-title {
-     text-align: center;
+.sponsor-title {     
      font-size: 45px;
      font-weight: 700;
      margin-bottom: 25px;
 }
-.sponsor-description {
-     text-align: center;
+
+.sponsor-description {  
      color: #727272;
 }
-.sponsor-tag{
+
+.sponsor-tag {
      display: flex;
-     gap: 155px ;
-     margin-bottom: 130px;   
+     gap: 155px;
+     margin-bottom: 130px;
 }
-.sponsor-tag-icon{
+
+.sponsor-tag-icon {
      filter: grayscale(100%);
 }
 
-footer{
+footer {
      width: 1500px;
      height: 60px;
      background-color: #FFF4E7;
      color: #424242;
      text-align: center;
-    padding-top: 40px;
+     padding-top: 40px;
 }
+@media screen and (max-width:576px){
+     .middle-main{
+          width: 575px;
+          margin-left: 10px;
+     }
+     .sponsor{
+          text-align: left;
+     }
+     .sponsor-title{
+          font-size: 40px;
+     }
+     .sponsor-tag{
+          display: block;
+         grid-template-columns: auto;
+     }
+     .sponsor-tag-icon{
+          margin-bottom: 20px;
+     }
+     footer{
+          width: 575px;
+     }
+     .experience-pic img{
+          width: 565px;
+     }
+}
+/* Completed by Muhammad Anayet */
